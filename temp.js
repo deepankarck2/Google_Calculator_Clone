@@ -1,6 +1,7 @@
 // IDEA:
 // Keep building an eval expression as you are typing
-// 
+
+
 function set(op) {
     document.getElementById("display").value += op;
 }
@@ -40,15 +41,15 @@ function asine() {
     document.getElementById("display").value = eval(Math.cos(tempStore));
   }
   
-  function sine() {
+function sine() {
     var tempStore = document.getElementById("display").value;
     document.getElementById("display").value = eval(Math.sin(tempStore));
-  }
+}
   
-  function setOp() {
+function setOp() {
     alert("gf");
     //document.getElementById("display").value += op;
-  }
+}
   
   function answer() {
     var Exp = document.getElementById("display");
