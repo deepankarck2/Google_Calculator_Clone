@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles.css" rel="stylesheet">
+
+    <title>Calculator</title>
+</head>
+<body>
+    <main class="main">
+        <div class="display">
+            <input disabled class="result" type="text" placeholder="0"> 
+        </div>
+
+        <div class="calculator">
+            <table class="left">
+                <tr>
+                    <td><button data-show="Rad(" class="cell operator">Rad</button></td>
+                    <td><button data-show="Deg(" class="cell operator">Deg</button></td>
+                    <td><button data-show="!" class="cell operator">x!</button></td>
+                </tr>
+                <tr>
+                    <td><button data-show="" class="cell operator">Inv</button></td>
+                    <td><button data-show="Sin(" class="cell operator" id="ss">sin</button></td>
+                    <td><button data-show="" class="cell operator">In</button></td>
+                  </tr>
+                <tr>
+                    <td><button class="cell operator">π</button></td>
+                    <td><button data-show="cos(" class="cell operator">cos</button></td>
+                    <td><button data-show="log(" class="cell operator">log</button></td>
+                 </tr>
+                <tr>
+                    <td><button class="cell operator">e</button></td>
+                    <td><button class="cell operator">tan</button></td>
+                    <td><button class="cell operator">√</button></td>
+                 </tr>
+                <tr>
+                    <td><button class="cell operator">Ans</button></td>
+                    <td><button class="cell operator">Exp</button></td>
+                    <td><button class="cell operator">x<sup>y</sup></button></td>
+                 </tr>
+            </table>
+            <table class="right">
+                <tr>
+                    <td><button class="cell operator">(</button></td>
+                    <td><button class="cell operator">)</button></td>
+                    <td><button class="cell operator">%</button></td>
+                    <td><button class="cell operator">AC</button></td>
+                </tr>
+                <tr>
+                    <td><button data-show="7" data-val="7" class="cell digits">7</button></td>
+                    <td><button data-show="8" data-val="8" class="cell digits">8</button></td>
+                    <td><button data-show="9" data-val="9" class="cell digits">9</button></td>
+                    <td><button data-show="/" class="cell operator">÷</button></td>
+                </tr>
+                <tr>
+                    <td><button data-show="4" data-val="4" class="cell digits">4</button></td>
+                    <td><button data-show="5" data-val="5" class="cell digits">5</button></td>
+                    <td><button data-show="6" data-val="6" class="cell digits">6</button></td>
+                    <td><button class="cell operator">x</button></td>
+                </tr>
+                <tr>
+                    <td><button data-show="1" data-val="1" class="cell digits">1</button></td>
+                    <td><button data-show="2" data-val="2" class="cell digits">2</button></td>
+                    <td><button data-show="3" data-val="3" class="cell digits">3</button></td>
+                    <td><button data-show="1" data-val="1" class="cell operator">-</button></td>
+                </tr>
+                <tr>
+                    <td><button class="cell digits">0</button></td>
+                    <td><button class="cell digits">.</button></td>
+                    <td><button class="cell euqal">=</button></td>
+                    <td><button class="cell operator">+</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
