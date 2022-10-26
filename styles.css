@@ -7,7 +7,7 @@
 
 .display{
     width: 98.4%;
-    height: 55px;
+    height: 70px;
     border-radius: 6px;
     display: flex;
     color: black;
@@ -16,7 +16,8 @@
     margin: 15px 0 15px 4px;
     box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .result{
@@ -25,8 +26,23 @@
     width: 100%;  
     font-size: 25px;
 }
+.result1{
+    border: none;
+    text-align: right;
+    width: 100%;  
+    font-size: 15px;
+}
+
+.result2{
+    border: none;
+    text-align: right;
+    width: 100%;  
+    font-size: 25px;
+    margin-bottom: 8px;
+}
 input:disabled{
-    margin-top: 15px;
+    background: transparent;
+    margin-top: 5px;
     padding-right: 8px;
     color: black;
 }
@@ -36,7 +52,7 @@ body{
     justify-content: center;
     width: 620px;
     margin: 200px auto;
-    height: 310px;
+    height: 335px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     padding: 10px;
     border-radius: 10px;

@@ -20,6 +20,7 @@ buttons.map(button => {
             display.value = "0"; 
             current_display = "";
             current_eval= "";
+            display2.value = "";
         }
         else if(clicked_btn == '!'){
             current_display += clicked_btn;
@@ -37,6 +38,7 @@ buttons.map(button => {
                 console.log(current_eval);
                 result = eval(current_eval);
                 display.value = result;
+                display2.value = current_display;
             }catch{
                display.value = "Error!";
             }
