@@ -3,13 +3,19 @@ const display = document.querySelector('#display');
 let current_display = ""; 
 let current_eval = "";
 let ac_flag = false; 
+let last_ans = ''; 
+let reset = false;
 
 buttons.map(button => {
     button.addEventListener('click', (e)=>{
         const clicked_btn = e.target.dataset.show;
         const clicked_eval = e.target.dataset.val;
         console.log(clicked_btn)
-        
+        if(reset){
+            clear();
+            reset = false;
+        }
+
         if(clicked_btn == 'AC'){
             clear();
         }
@@ -32,11 +38,19 @@ buttons.map(button => {
             current_eval += `Math.pow(${n},`
             console.log(n);
         }
+        else if(clicked_btn == 'ans'){
+            console.log(last_ans);
+            current_eval = last_ans;
+            current_display = 'Ans';
+            display.value = current_display;
+            
+        }
         else if(clicked_btn == 'euqal'){
             let result = "";
             try{
                 console.log(current_eval);
                 result = eval(current_eval);
+                last_ans = result;
                 display.value = result;
                 display2.value = `${current_display}=`;
             }catch{
@@ -46,6 +60,7 @@ buttons.map(button => {
             ac_flag = true; 
             current_display = "";
             current_eval= "";
+            reset = true;
         }
         else{
             current_display += clicked_btn; 
