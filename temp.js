@@ -64,12 +64,7 @@ function setOp() {
     var length = elem.length;
     length--;
     var a = elem.substr(0, length);
-  
-    // document.getElementById("display").value="";
-    //for(var i=0;i<length-1;i++)
-    //{
+
     document.getElementById("display").value = a;
-    // }
-    //alert(length);
+
   }
-  
